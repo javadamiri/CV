@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+\usepackage[super]{nth}
+
+%% Personal data
+\firstname{Javad}
+\familyname{Ebrahimian Amiri}
+% \title{Resumé title (optional)} 
+\address{96/15 John Cleland Crescent, Florey}{ACT 2615} 
+\mobile{+61~(4)~6876~4362} 
+\email{javad.amiri@anu.edu.au} 
+% \homepage{www.johndoe.com} 
+% \extrainfo{additional information} 
+% % \photo[64pt][0.4pt]{picture}
+% \quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\input{education.tex}
+\input{research_interests.tex}
+% \input{research_experience.tex}
+\input{academic_experience.tex}
+\input{selected_courses.tex}
+\input{selected_projects.tex}
+\input{skills.tex}
+\input{honors_and_awards.tex}
+
+%% A publications list
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} % a bibtex file containing the list of publications
+
+\end{document}

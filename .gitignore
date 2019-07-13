@@ -1,0 +1,9 @@
+.DS_Store
+*.aux
+*.log
+*.out
+cv.fdb_latexmk
+cv.fls
+cv.synctex.gz
+cv.bbl
+cv.blg
